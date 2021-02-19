@@ -11,8 +11,8 @@ Here an image of how I planned this project. This is just for demonstration, and
 ![Flutter Text Widget Exercise Sketch](images/sketches/text-widget-sketch.png)
 
 ### Project Status
-- [ ] Create the containers to support Text Widgets.
-- [ ] Stylize containers.
+- [x] Create the containers to support Text Widgets.
+- [x] Stylize containers.
 - [ ] Create simple Text Widgets in the first container, without any style.
 - [ ] Create simple Text Widgets in the second container, without any style.
 - [ ] Stylize Text Widgets in the first container.
