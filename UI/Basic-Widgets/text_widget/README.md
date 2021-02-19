@@ -8,7 +8,8 @@ I think that is important to train and learn starting from the basics. So, Text 
 ## How I want this?
 Here an image of how I planned this project. This is just for demonstration, and it can be different at the end of the project.
 
-![Flutter Text Widget Exercise Sketch](images/sketches/text-widget-sketch.png)
+![Flutter Text Widget Exercise Prototype](images/sketches/Prototype-Flutter-Text-Example-Learning.png)
+![Flutter Text Widget Exercise Sketch](images/sketches/Sketch-Text-Widget.png)
 
 ### Project Status
 - [x] Create the containers to support Text Widgets.
