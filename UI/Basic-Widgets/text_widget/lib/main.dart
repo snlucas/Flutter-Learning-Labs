@@ -12,10 +12,13 @@ class TextWidget extends StatelessWidget {
           child: Padding(
             padding: EdgeInsets.symmetric(vertical: 10.0),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                CardContainer(color: Colors.green[300]),
+                CardContainer(color: Colors.greenAccent),
+                SizedBox(
+                  height: 10.0,
+                ),
                 CardContainer(
+                  flex: 2,
                   boxShadowList: <BoxShadow>[
                     BoxShadow(
                       color: Colors.grey[500],
@@ -40,12 +43,14 @@ class TextWidget extends StatelessWidget {
 }
 
 class CardContainer extends StatelessWidget {
+  final int flex;
   final Color color;
   final BoxDecoration decoration;
   final List<BoxShadow> boxShadowList;
   final Border border;
 
   const CardContainer({
+    this.flex,
     this.color,
     this.decoration,
     this.boxShadowList,
@@ -54,17 +59,19 @@ class CardContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.symmetric(horizontal: 10.0),
-      height: 200.0,
-      decoration: this.decoration ??
-          // Default value
-          BoxDecoration(
-            color: this.color,
-            border: this.border,
-            borderRadius: kCardBorderRadius,
-            boxShadow: this.boxShadowList,
-          ),
+    return Expanded(
+      flex: this.flex ?? 1,
+      child: Container(
+        margin: EdgeInsets.symmetric(horizontal: 10.0),
+        decoration: this.decoration ??
+            // Default value
+            BoxDecoration(
+              color: this.color,
+              border: this.border,
+              borderRadius: kCardBorderRadius,
+              boxShadow: this.boxShadowList,
+            ),
+      ),
     );
   }
 }
